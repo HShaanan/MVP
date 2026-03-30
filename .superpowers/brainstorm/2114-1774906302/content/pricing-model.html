@@ -1,0 +1,129 @@
+<style>
+  body { direction: rtl; }
+  .tier-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  .tier-table th { background: #1e293b; color: #94a3b8; padding: 10px 14px; text-align: right; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .tier-table td { padding: 10px 14px; border-bottom: 1px solid #1e293b; }
+  .tier-table tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 600; }
+  .badge-high { background: #052e16; color: #4ade80; }
+  .badge-mid { background: #172554; color: #60a5fa; }
+  .badge-low { background: #1c1917; color: #a8a29e; }
+  .price-tag { font-size: 20px; font-weight: 700; color: #f1f5f9; }
+  .price-sub { font-size: 11px; color: #64748b; }
+  .model-section { margin-bottom: 28px; }
+  .rec-badge { background: #7c3aed22; color: #a78bfa; border: 1px solid #7c3aed44; padding: 3px 10px; border-radius: 99px; font-size: 12px; margin-right: 8px; }
+</style>
+
+<h2>מודל תמחור מוצע — משלנו</h2>
+<p class="subtitle">3 גישות אפשריות — בחר את המתאימה ביותר</p>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">א</div>
+    <div class="content">
+      <h3>תעריף קבוע לפי קטגוריית עסק <span class="rec-badge">מומלץ</span></h3>
+      <p style="color:#94a3b8;font-size:13px;margin-bottom:12px">כל קטגוריה = מחיר אחד. פשוט לבעל העסק להבין, קל לנהל.</p>
+      <table class="tier-table">
+        <thead>
+          <tr>
+            <th>סוג עסק</th>
+            <th>שאילתות/חודש</th>
+            <th>ערך ממוצע לעסקה</th>
+            <th>מחיר בסיסי</th>
+            <th>מחיר פרמיום</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🍕 מסעדה / מאפייה / קייטרינג</td>
+            <td><span class="badge badge-high">גבוה מאוד</span></td>
+            <td>₪30–150</td>
+            <td><span class="price-tag">₪49</span><br><span class="price-sub">/חודש</span></td>
+            <td><span class="price-tag">₪99</span><br><span class="price-sub">/חודש</span></td>
+          </tr>
+          <tr>
+            <td>🛍️ חנות / מכולת / ספרים</td>
+            <td><span class="badge badge-high">גבוה</span></td>
+            <td>₪50–300</td>
+            <td><span class="price-tag">₪49</span><br><span class="price-sub">/חודש</span></td>
+            <td><span class="price-tag">₪99</span><br><span class="price-sub">/חודש</span></td>
+          </tr>
+          <tr>
+            <td>✂️ ספר / מאפרת / קוסמטיקה</td>
+            <td><span class="badge badge-mid">בינוני</span></td>
+            <td>₪80–400</td>
+            <td><span class="price-tag">₪79</span><br><span class="price-sub">/חודש</span></td>
+            <td><span class="price-tag">₪149</span><br><span class="price-sub">/חודש</span></td>
+          </tr>
+          <tr>
+            <td>🔧 חשמאי / אינסטלטור / שיפוצניק</td>
+            <td><span class="badge badge-mid">בינוני</span></td>
+            <td>₪300–3,000</td>
+            <td><span class="price-tag">₪99</span><br><span class="price-sub">/חודש</span></td>
+            <td><span class="price-tag">₪199</span><br><span class="price-sub">/חודש</span></td>
+          </tr>
+          <tr>
+            <td>⚖️ עורך דין / רואה חשבון / יועץ</td>
+            <td><span class="badge badge-low">נמוך</span></td>
+            <td>₪500–10,000+</td>
+            <td><span class="price-tag">₪149</span><br><span class="price-sub">/חודש</span></td>
+            <td><span class="price-tag">₪299</span><br><span class="price-sub">/חודש</span></td>
+          </tr>
+          <tr>
+            <td>🏥 רופא / רופא שיניים / פיזיותרפיה</td>
+            <td><span class="badge badge-low">נמוך</span></td>
+            <td>₪200–800</td>
+            <td><span class="price-tag">₪99</span><br><span class="price-sub">/חודש</span></td>
+            <td><span class="price-tag">₪199</span><br><span class="price-sub">/חודש</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:#64748b;margin-top:8px">
+        ✅ בסיסי = מופיע בתוצאות, פרטי קשר<br>
+        ⭐ פרמיום = עדיפות ראשונה + תגיות מודגשות + תמונה
+      </p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">ב</div>
+    <div class="content">
+      <h3>2 תוכניות אחידות לכל העסקים</h3>
+      <p style="color:#94a3b8;font-size:13px;margin-bottom:12px">מחיר אחיד לכולם — פשוט אבל לא מותאם לערך הנתפס.</p>
+      <table class="tier-table">
+        <thead><tr><th>תוכנית</th><th>מה כלול</th><th>מחיר</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Basic</strong></td>
+            <td>מופיע בתוצאות, שם + טלפון</td>
+            <td><span class="price-tag">₪79</span><span class="price-sub">/חודש</span></td>
+          </tr>
+          <tr>
+            <td><strong>Premium</strong></td>
+            <td>עדיפות + תגיות + תמונה + הדגשה</td>
+            <td><span class="price-tag">₪149</span><span class="price-sub">/חודש</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">ג</div>
+    <div class="content">
+      <h3>Pay-per-lead (תשלום לפי לידים)</h3>
+      <p style="color:#94a3b8;font-size:13px;margin-bottom:12px">עסק משלם רק כשמישהו פנה אליו. מושך לבעלי עסקים, אבל קשה מאוד לעקוב ולוודא ב-MVP.</p>
+      <table class="tier-table">
+        <thead><tr><th>קטגוריה</th><th>מחיר ליד</th></tr></thead>
+        <tbody>
+          <tr><td>מסעדה / חנות</td><td>₪2–5 ליד</td></tr>
+          <tr><td>בעל מקצוע</td><td>₪10–25 ליד</td></tr>
+          <tr><td>שירות מקצועי</td><td>₪30–80 ליד</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:#ef4444;margin-top:8px">⚠️ דורש מעקב מדויק — לא מתאים ל-MVP</p>
+    </div>
+  </div>
+
+</div>
